@@ -1,0 +1,92 @@
+* {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+body {
+    cursor: default;
+    font-family: helvetica;
+}
+
+#container {
+        width: 994px;
+        padding: 50px 47px 10px 47px;
+        margin: 20px auto;
+        box-shadow: 0 0 5px #333;
+        background: #ddd;
+}
+
+header {
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin-bottom: 50px;
+}
+
+.title-anim {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+#animation h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#animation .parag {
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.parag-anim {
+  margin-bottom: 20px;
+}
+
+#animation li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 25px;
+  font-size: 15px;
+  padding: 5px 0;
+  line-height: 25px;
+}
+
+
+#animation p {
+  margin-left: 25px;
+  font-size: 15px;
+  padding: 5px 0;
+  line-height: 25px;
+}
+
+#animation {
+  border-radius: 10px;
+  background-color: #EEEEEE;
+  padding: 25px;
+}
+
+.background-white {
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#animation .selecteur {
+  padding-left: 23px;
+}
+
+#animation .selec2 {
+  padding-left: 40px;
+}
+
+#animation .green {
+  color: #71B43D;
+  font-weight: bold;
+}

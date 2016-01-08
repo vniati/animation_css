@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="UTF-8">
+        <title>Exercices Transitions et Animations</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div id="container">
+                <header>
+                        <h1>Transitions et Animations</h1>
+                </header>
+
+                <section>
+                        <article>
+
+                        </article>
+
+                        <h1 class="title-anim">Les animations</h1>
+                        <p class="parag-anim">Les Animations permettent de modifier les valeurs de propriétés CSS plusieurs fois dans le temps, tel un scénario Flash. C’est en fait plusieurs transitions qui s’enchainent !</p>
+                        <article id="animation">
+                          <h2>Comment déclarer une animation ? </h2>
+                          <div class="background-white">
+                            <p class="parag">Il faut pour cela utiliser <span class="green">@keyframes</span>, lui donner un nom, puis gérer les "étapes" en pourcentage à l’intérieur de cette déclaration. Les mots-clés from et to correspondent respectivement à 0 et 100%.</p>
+                            <p>Exemple :<br> <span class="green">@keyframes</span> nomAnim{</p>
+                            <p class="selec2">from { color:blue; }</p>
+                            <p class="selec2"> 35%  { color:green; }</p>
+                            <p class="selec2">to { color:red; }</p>
+                            <p>{</p>
+                          </div>
+                          <h2>Utiliser cette animation</h2>
+                          <div class="background-white">
+                            <ul>
+                              <li><span class="green">animation-name</span> : le nom de l’animation à utiliser.</li>
+                              <li><span class="green">animation-duration</span> : le temps total de l’animation.</li>
+                              <li><span class="green">animation-timing-function</span> : la méthode d’interpolation (accélération, décélération). Voici quelques valeurs possibles : linear, ease, ease-in, ease-out, ease-in-out, steps (nombre, start | end).</li>
+                              <li><span class="green">animation-iteration-count</span> : le nombre de répétition de l’animation. La valeur infinite permet de jouer une animation en continu.</li>
+                              <li><span class="green">animation-direction</span> : permet de jouer une animation en sens inverse (en fonction du cycle).</li>
+                              <li><span class="green">animation-play-state</span> : mettre en pause l’animation.</li>
+                              <li><span class="green">animation-delay</span> : Configure le délai entre l'instant auquel l'élément est chargé et le début de l'animation.</li>
+                              <li><span class="green">animation-fill-mode</span> :Configure les valeurs qui doivent être appliquée par l'animation avant et après qu'elle soit exécutée.</li>
+                            </ul>
+                            <p>Il existe aussi la propriété raccourcie animation.Voici un exemple qui utilise l’animation créée ci-dessus. Cette animation durera 5 secondes avec un delai de 2 secondes et utilise une méthode linear, c’est à dire sans accélération, ni décélération</p><p>div {</p><p class="selecteur">animation: nomAnim 5s linear 2s;</p><p>}</p>
+                          </div>
+                          <h2>Compatibilité dans les navigateurs</h2>
+                          <div class="background-white">
+                            <p class="parag">Les animations CSS3 sont compatibles avec IE 10, Firefox 5, Chrome 4, Safari 4, Opéra 12 et sur iOS et Android 4. Cependant, pour pouvoir les utiliser, il faut préfixer toutes les propriétés ainsi que les étapes définies avec @keyframes.</p>
+                            <p>@-webkit-keyframes nomAnim{ ... }</p>
+                            <p>@-moz-keyframes nomAnim{ ... }</p>
+                            <p>@-ms-keyframes nomAnim{ ... }</p>
+                            <p>@-o-keyframes nomAnim{ ... }</p>
+                            <p class=parag>@keyframes nomAnim{ ... }</p>
+                            <p>div {</p>
+                            <p class="selecteur">-webkit-animation: nomAnim 5s linear 2s;</p>
+                            <p class="selecteur">-moz-animation: nomAnim 5s linear 2s;</p>
+                            <p class="selecteur">-ms-animation: nomAnim 5s linear 2s;</p>
+                            <p class="selecteur">-o-animation: nomAnim 5s linear 2s;</p>
+                            <p class="selecteur">animation: nomAnim 5s linear 2s;</p>
+                            <p>}</p>
+                          </div>
+                        </article>
+                </section>
+        </div>
+
+</body>
+</html>
